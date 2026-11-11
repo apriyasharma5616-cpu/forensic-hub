@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forensic Hub | Undergraduate Forensic Science Educational Platform</title>
+  <meta name="description" content="An open educational portal for first-year university forensic science students featuring virtual labs, interactive case studies, study notes, and quizzes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP NAVIGATION BAR
+       ======================================================================== -->
+  <nav class="site-nav" id="mainNav">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Forensic Hub Home">
+        <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 3.31 1.61 6.24 4.09 8.04.4.29.96.12 1.13-.34.13-.35.02-.75-.26-1-2.07-1.5-3.46-3.95-3.46-6.7 0-4.69 3.81-8.5 8.5-8.5s8.5 3.81 8.5 8.5c0 2.75-1.39 5.2-3.46 6.7-.28.25-.39.65-.26 1 .17.46.73.63 1.13.34C20.39 18.24 22 15.31 22 12c0-5.52-4.48-10-10-10z"/>
+          <path d="M12 6c-3.31 0-6 2.69-6 6 0 1.96.95 3.7 2.42 4.79.37.28.89.17 1.1-.24.16-.32.06-.71-.22-.96C8.24 14.77 7.5 13.48 7.5 12c0-2.48 2.02-4.5 4.5-4.5s4.5 2.02 4.5 4.5c0 1.48-.74 2.77-1.8 3.59-.28.25-.38.64-.22.96.21.41.73.52 1.1.24 1.47-1.09 2.42-2.83 2.42-4.79 0-3.31-2.69-6-6-6z"/>
+          <circle cx="12" cy="12" r="2" fill="currentColor"/>
+        </svg>
+        <div class="brand-text">
+          Forensic<span>Hub</span>
+          <span class="brand-sub">Academic Portal</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Menu -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#subjects" class="nav-link">Subjects</a></li>
+        <li><a href="#cases" class="nav-link">Case Studies</a></li>
+        <li><a href="#lab" class="nav-link">Virtual Lab</a></li>
+        <li><a href="#study" class="nav-link">Study Hub</a></li>
+        <li><a href="#quiz" class="nav-link">Quiz</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#career" class="nav-link">Career</a></li>
+        <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+        <li><a href="#glossary" class="nav-link">Glossary</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#lab" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.5 19.3A2 2 0 0 0 6.2 22h11.6a2 2 0 0 0 1.7-2.7L14 9.31V2"/></svg>
+          Launch Lab
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================================
+       SECTION 1: HOME (HERO SECTION)
+       ======================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="status-dot"></span>
+          <span>Undergraduate Academic Edition • Year 1 Core</span>
+        </div>
+
+        <h1 class="hero-title">
+          Explore. Investigate.<br>
+          <span class="highlight">Learn Forensics.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Welcome to Forensic Hub — the comprehensive open-access study portal designed specifically for first-year university students of Forensic Science. Master physical evidence handling, biochemical assays, ballistic trajectories, and digital investigations through interactive virtual labs, peer study notes, and real-world case simulations.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#lab" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Explore Virtual Labs
+          </a>
+          <a href="#study" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10M6 14h6"/></svg>
+            Study Notes & Guides
+          </a>
+          <a href="#quiz" class="btn btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            Take Practice Quiz
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Core Forensic Sciences</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Open Undergraduate Curriculum</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Interactive Virtual Simulators</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Fingerprint Biometric Scanner -->
+      <div class="hero-visual">
+        <div class="fingerprint-card">
+          <div class="card-bracket tl"></div>
+          <div class="card-bracket tr"></div>
+          <div class="card-bracket bl"></div>
+          <div class="card-bracket br"></div>
+
+          <div class="scanner-header">
+            <div class="scanner-status">
+              <span class="status-dot"></span>
+              <span id="scannerStatusText">Optical Sensor Active • 500 DPI</span>
+            </div>
+            <span>AFIS-LATENT</span>
+          </div>
+
+          <div class="scanner-frame">
+            <div class="scanner-beam"></div>
+
+            <!-- Detailed Fingerprint Ridge Pattern SVG -->
+            <svg class="fingerprint-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+              <!-- Outer loops & friction ridges -->
+              <path d="M50 8 C25 8 10 28 10 55 C10 85 24 105 35 115" />
+              <path d="M50 16 C30 16 18 34 18 56 C18 80 30 98 42 110" />
+              <path d="M50 24 C35 24 26 38 26 58 C26 76 36 92 48 105" />
+              <!-- Core whorl/loop concentric arcs -->
+              <path d="M50 32 C40 32 34 42 34 58 C34 72 42 84 52 98" />
+              <path d="M50 40 C43 40 40 48 40 59 C40 68 46 78 54 90" />
+              <path d="M50 48 C46 48 45 52 45 60 C45 65 49 72 56 82" />
+              <!-- Center core triradius -->
+              <path d="M50 54 C48 54 48 58 50 63 C52 68 55 74 60 78" />
+              <!-- Right recurving ridges -->
+              <path d="M55 48 C60 48 64 54 62 62 C60 70 54 82 50 90" />
+              <path d="M60 40 C68 42 72 50 70 62 C68 74 60 88 54 98" />
+              <path d="M64 32 C74 36 80 46 78 62 C76 78 68 94 60 106" />
+              <path d="M68 24 C80 30 86 42 86 62 C86 82 76 100 68 112" />
+              <path d="M72 16 C86 24 92 38 92 62 C92 86 82 106 72 118" />
+              <!-- Ridge bifurcations and interruptions -->
+              <path d="M42 30 C45 32 47 38 46 44" />
+              <path d="M30 70 C34 72 38 78 40 84" />
+              <path d="M66 70 C64 74 62 80 60 86" />
+            </svg>
+
+            <!-- Interactive Minutiae Markers -->
+            <div class="minutiae-point" style="top: 36%; left: 34%;" data-label="Bifurcation (L2)"></div>
+            <div class="minutiae-point" style="top: 52%; left: 48%;" data-label="Core Center"></div>
+            <div class="minutiae-point" style="top: 66%; left: 62%;" data-label="Ridge Ending (L2)"></div>
+            <div class="minutiae-point" style="top: 74%; left: 32%;" data-label="Delta Triradius"></div>
+          </div>
+
+          <div class="scanner-footer">
+            <div class="scanner-data-row">
+              <span>PATTERN CLASSIFICATION:</span>
+              <span id="scannerPatternType">Right Loop (Ulnar)</span>
+            </div>
+            <div class="scanner-data-row">
+              <span>MINUTIAE CONFIDENCE:</span>
+              <span id="scannerMatchRate">98.8% Galton Match</span>
+            </div>
+            <div class="scanner-data-row">
+              <span>INTERACTIVE INSPECTION:</span>
+              <span>Click any marker to inspect</span>
+            </div>
+
+            <button class="scanner-trigger-btn" id="scannerTriggerBtn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20"/><circle cx="12" cy="12" r="7"/></svg>
+              Run Biometric Latent Scan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: SUBJECTS
+       ======================================================================== -->
+  <section class="section section-alt" id="subjects">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Academic Disciplines</span>
+        <h2 class="section-title">Foundational Forensic Sciences</h2>
+        <p class="section-subtitle">
+          First-year forensic curricula synthesize multiple scientific domains. Explore each primary branch to inspect core lecture topics, laboratory techniques, and evidence evaluation methodologies.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- 1. Forensic Biology -->
+        <div class="forensic-card subject-card" data-subject="biology">
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3 class="card-title">Forensic Biology</h3>
+          <p class="card-desc">
+            Focuses on the detection and analysis of biological materials including blood, semen, saliva, hair shafts, and bone fragments. Introduces PCR DNA profiling, Short Tandem Repeats (STRs), and forensic entomology.
+          </p>
+          <div class="subject-tags">
+            <span class="subject-tag">Serology</span>
+            <span class="subject-tag">STR DNA</span>
+            <span class="subject-tag">Entomology</span>
+            <span class="subject-tag">Anthropology</span>
+          </div>
+          <span class="card-footer-link">
+            <span>Explore Curriculum & Lab Skills</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+
+        <!-- 2. Forensic Chemistry -->
+        <div class="forensic-card subject-card" data-subject="chemistry">
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.5 19.3A2 2 0 0 0 6.2 22h11.6a2 2 0 0 0 1.7-2.7L14 9.31V2"/><line x1="8.5" y1="2" x2="15.5" y2="2"/><circle cx="10" cy="16" r="1"/><circle cx="14" cy="18" r="1"/></svg>
+          </div>
+          <h3 class="card-title">Forensic Chemistry</h3>
+          <p class="card-desc">
+            Applies chemical analytical methodologies to identify unknown powders, illicit controlled substances, toxicological post-mortem specimens, fire accelerants, and explosive residues.
+          </p>
+          <div class="subject-tags">
+            <span class="subject-tag">Toxicology</span>
+            <span class="subject-tag">GC-MS</span>
+            <span class="subject-tag">Arson Headspace</span>
+            <span class="subject-tag">Spot Tests</span>
+          </div>
+          <span class="card-footer-link">
+            <span>Explore Curriculum & Lab Skills</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+
+        <!-- 3. Forensic Physics -->
+        <div class="forensic-card subject-card" data-subject="physics">
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg>
+          </div>
+          <h3 class="card-title">Forensic Physics</h3>
+          <p class="card-desc">
+            Utilizes classical mechanics, optical theory, fluid dynamics, and thermodynamics to reconstruct crime scenes. Covers bloodstain pattern analysis (BPA), glass fracture mechanics, and ballistics.
+          </p>
+          <div class="subject-tags">
+            <span class="subject-tag">Bloodstain BPA</span>
+            <span class="subject-tag">Ballistics</span>
+            <span class="subject-tag">3R Rule Glass</span>
+            <span class="subject-tag">Collision Dynamics</span>
+          </div>
+          <span class="card-footer-link">
+            <span>Explore Curriculum & Lab Skills</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+
+        <!-- 4. Fingerprint Science -->
+        <div class="forensic-card subject-card" data-subject="fingerprints">
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.5 2 2 6.5 2 12c0 3.3 1.6 6.2 4.1 8"/><path d="M12 6c-3.3 0-6 2.7-6 6 0 2 1 3.7 2.4 4.8"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <h3 class="card-title">Fingerprint Science</h3>
+          <p class="card-desc">
+            The study of friction ridge skin morphology (Dactyloscopy), Henry classification systems, latent print visualization (ninhydrin, cyanoacrylate), and the ACE-V scientific verification methodology.
+          </p>
+          <div class="subject-tags">
+            <span class="subject-tag">Dactyloscopy</span>
+            <span class="subject-tag">ACE-V</span>
+            <span class="subject-tag">Cyanoacrylate</span>
+            <span class="subject-tag">Minutiae</span>
+          </div>
+          <span class="card-footer-link">
+            <span>Explore Curriculum & Lab Skills</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+
+        <!-- 5. Digital Forensics -->
+        <div class="forensic-card subject-card" data-subject="digital">
+          <div class="card-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="card-title">Digital Forensics</h3>
+          <p class="card-desc">
+            The recovery and examination of electronic materials found on digital devices, ensuring chain of custody and forensic byte-level bitstream imaging with write-blockers and cryptographic hashes.
+          </p>
+          <div class="subject-tags">
+            <span class="subject-tag">Hash Integrity</span>
+            <span class="subject-tag">Disk Imaging</span>
+            <span class="subject-tag">RAM Triage</span>
+            <span class="subject-tag">Metadata</span>
+          </div>
+          <span class="card-footer-link">
+            <span>Explore Curriculum & Lab Skills</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subject Detail Modal / Drawer -->
+  <div class="modal-overlay" id="subjectModal" role="dialog" aria-modal="true" aria-labelledby="modalSubjectTitle">
+    <div class="modal-box">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div style="font-family: monospace; font-size: 0.75rem; color: #f59e0b; margin-bottom: 8px;" id="modalSubjectCode">MODULE CODE</div>
+      <h2 style="font-size: 1.8rem; color: #fff; margin-bottom: 12px;" id="modalSubjectTitle">Subject Title</h2>
+      <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px;" id="modalSubjectDesc">Description</p>
+      
+      <div style="font-size: 0.85rem; font-family: monospace; color: #0df2c9; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.05em;">Curriculum Core Modules:</div>
+      <div id="modalModulesList" style="margin-bottom: 24px;"></div>
+
+      <div style="font-size: 0.85rem; font-family: monospace; color: #0df2c9; text-transform: uppercase; margin-bottom: 12px; letter-spacing: 0.05em;">Essential Laboratory Competencies:</div>
+      <div id="modalSkillsList"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SECTION 3: CASE STUDIES
+       ======================================================================== -->
+  <section class="section" id="cases">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Applied Forensic Science</span>
+        <h2 class="section-title">Educational Case Studies</h2>
+        <p class="section-subtitle">
+          Examine realistic fictional case scenarios designed for first-year analytical reasoning. Evaluate physical evidence logs, trace transfers, and laboratory findings before revealing the investigator's scientific conclusion.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Case 1: Arson & Hydrocarbons -->
+        <div class="case-card">
+          <div class="case-badge-row">
+            <span class="case-id">CASE #101-ARS</span>
+            <span class="case-difficulty">Level: 1st Year Chemistry</span>
+          </div>
+          <h3 class="card-title">The Midnight Warehouse Fire</h3>
+          <p class="card-desc">
+            Fire investigators responded to a sudden commercial storage facility fire. Charring was localized around low-lying baseboards with inverted 'V' patterns on drywall, indicating a low ignition origin.
+          </p>
+          <div class="case-evidence-box">
+            <div class="case-evidence-title">Evidentiary Item Recovered:</div>
+            <p>Charred floor joists packaged in unlined clean metal paint cans. Passive headspace Gas Chromatography-Mass Spectrometry (GC-MS) analysis detected distinctive alkane homologous series ($C_9$ through $C_{16}$).</p>
+          </div>
+          <button class="btn-toggle-solution">
+            <span>Reveal Forensic Conclusion & Legal Rationale</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="case-solution-panel">
+            <strong style="color: #0df2c9;">Forensic Analysis:</strong> The alkane distribution and aromatic profile (toluene, xylenes, alkylbenzenes) correspond specifically to Medium Petroleum Distillates (diesel fuel / kerosene accelerant), refuting the claim of spontaneous electrical fault. The airtight metal can prevented evaporation of volatile hydrocarbons, securing crucial evidence for arson prosecution.
+          </div>
+        </div>
+
+        <!-- Case 2: Locard's Principle & Fiber Transfer -->
+        <div class="case-card">
+          <div class="case-badge-row">
+            <span class="case-id">CASE #102-BIO</span>
+            <span class="case-difficulty">Level: 1st Year Biology / Trace</span>
+          </div>
+          <h3 class="card-title">The Whispering Velvet Fiber</h3>
+          <p class="card-desc">
+            A late-night burglary occurred through a shattered French door. An expensive vintage painting was stolen. The suspect wore disposable latex gloves to avoid leaving fingerprints on the frame.
+          </p>
+          <div class="case-evidence-box">
+            <div class="case-evidence-title">Evidentiary Item Recovered:</div>
+            <p>Clear adhesive tape lifts applied to jagged glass edges yielded several triangular cross-section royal blue synthetic fibers with identical dye absorbance under microspectrophotometry.</p>
+          </div>
+          <button class="btn-toggle-solution">
+            <span>Reveal Forensic Conclusion & Legal Rationale</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="case-solution-panel">
+            <strong style="color: #0df2c9;">Forensic Analysis:</strong> Demonstrates Locard’s Exchange Principle. While the suspect avoided fingerprint deposition by wearing gloves, friction against the broken glass snagged trilobal nylon fibers matching a customized jacket seized from the suspect's residence. Polarized Light Microscopy (PLM) established identical refractive index and sign of elongation.
+          </div>
+        </div>
+
+        <!-- Case 3: Bloodstain & Ballistics -->
+        <div class="case-card">
+          <div class="case-badge-row">
+            <span class="case-id">CASE #103-PHY</span>
+            <span class="case-difficulty">Level: 1st Year Physics</span>
+          </div>
+          <h3 class="card-title">The Corridor Projectile Trajectory</h3>
+          <p class="card-desc">
+            A dispute in a narrow residential corridor resulted in a firearm discharge into a plasterboard partition. Conflicting witness statements claimed the shot was fired either from an upward or downward angle.
+          </p>
+          <div class="case-evidence-box">
+            <div class="case-evidence-title">Evidentiary Item Recovered:</div>
+            <p>An elliptical blood spatter droplet on the adjacent wall measured $w = 6.2\text{ mm}$ and $l = 12.4\text{ mm}$, accompanied by concentric bullet exit spalling on the drywall.</p>
+          </div>
+          <button class="btn-toggle-solution">
+            <span>Reveal Forensic Conclusion & Legal Rationale</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="case-solution-panel">
+            <strong style="color: #0df2c9;">Forensic Analysis:</strong> Applying the trigonometric relationship $\theta = \arcsin(w/l) = \arcsin(6.2/12.4) = \arcsin(0.5) = 30^\circ$. String line trajectory reconstruction back through the drywall penetration demonstrated a downward trajectory of $30^\circ$, corroborating that the shooter was standing on the elevated staircase landing above the victim.
+          </div>
+        </div>
+
+        <!-- Case 4: Digital Forensic Triage -->
+        <div class="case-card">
+          <div class="case-badge-row">
+            <span class="case-id">CASE #104-DIG</span>
+            <span class="case-difficulty">Level: 1st Year Digital</span>
+          </div>
+          <h3 class="card-title">The Encrypted Exfiltration Ghost</h3>
+          <p class="card-desc">
+            An insider trading suspect claimed they never accessed proprietary company acquisition dossiers prior to their resignation at 17:00 on Friday.
+          </p>
+          <div class="case-evidence-box">
+            <div class="case-evidence-title">Evidentiary Item Recovered:</div>
+            <p>Forensic bit-stream clone (.E01) of the employee laptop verified with SHA-256 hash. Examination of Windows Shellbags, USBSTOR registry keys, and $UsnJrnl change logs.</p>
+          </div>
+          <button class="btn-toggle-solution">
+            <span>Reveal Forensic Conclusion & Legal Rationale</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="case-solution-panel">
+            <strong style="color: #0df2c9;">Forensic Analysis:</strong> USBSTOR records confirmed insertion of a 64GB Kingston flash drive (Serial #001A4D) at 16:42. Prefetch execution artifacts for 7-Zip correlated with an encrypted zip creation timestamp. LNK shortcuts demonstrated direct folder traversal into the confidential acquisitions folder, conclusively disproving the defense.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: VIRTUAL LAB
+       ======================================================================== -->
+  <section class="section section-alt" id="lab">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Hands-on Experimentation</span>
+        <h2 class="section-title">Forensic Virtual Laboratory</h2>
+        <p class="section-subtitle">
+          Bridge textbook theory with interactive laboratory practice. Test your skills across 4 foundational forensic practical modules directly in your browser.
+        </p>
+      </div>
+
+      <div class="lab-container">
+        <!-- Lab Navigation Tabs -->
+        <div class="lab-tabs" role="tablist">
+          <button class="lab-tab-btn active" data-lab="lab-minutiae">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            1. Minutiae Identifier
+          </button>
+          <button class="lab-tab-btn" data-lab="lab-km">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L4.5 19.3A2 2 0 0 0 6.2 22h11.6a2 2 0 0 0 1.7-2.7L14 9.31V2"/></svg>
+            2. Kastle-Meyer Blood Assay
+          </button>
+          <button class="lab-tab-btn" data-lab="lab-dna">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 8h10M7 12h10M7 16h10"/></svg>
+            3. DNA Gel Electrophoresis
+          </button>
+          <button class="lab-tab-btn" data-lab="lab-spatter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            4. Bloodstain Impact Angle
+          </button>
+        </div>
+
+        <!-- Lab Panel 1: Minutiae Identifier -->
+        <div class="lab-content-panel active" id="lab-minutiae">
+          <div class="minutiae-lab-grid">
+            <div class="interactive-fingerprint-viewer">
+              <svg width="240" height="270" viewBox="0 0 100 120" style="stroke: #0df2c9; fill: none; stroke-width: 2;">
+                <!-- Distinct ridge patterns with marked regions -->
+                <path d="M50 15 C20 15 15 35 15 65 C15 90 28 105 40 115" />
+                <path d="M50 25 C30 25 24 40 24 65 C24 85 34 95 45 105" />
+                <path d="M50 35 C38 35 32 48 32 65 C32 80 40 90 50 100" />
+                <path d="M50 45 C44 45 40 52 40 65 C40 75 46 82 55 90" />
+                <!-- Center core -->
+                <circle cx="50" cy="58" r="3" fill="#0df2c9" />
+                <!-- Bifurcation branch -->
+                <path d="M40 75 C45 80 50 82 60 84" />
+                <!-- Ridge ending -->
+                <line x1="32" y1="65" x2="32" y2="78" stroke-linecap="round" />
+                <!-- Island / dot -->
+                <circle cx="28" cy="88" r="1.5" fill="#0df2c9" />
+              </svg>
+
+              <!-- Labels Overlay -->
+              <div style="position: absolute; top: 46%; left: 52%; background: #030712; border: 1px solid #f59e0b; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; color: #f59e0b; font-family: monospace;">Point 4</div>
+              <div style="position: absolute; top: 62%; left: 40%; background: #030712; border: 1px solid #f59e0b; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; color: #f59e0b; font-family: monospace;">Point 1</div>
+              <div style="position: absolute; top: 65%; left: 24%; background: #030712; border: 1px solid #f59e0b; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; color: #f59e0b; font-family: monospace;">Point 2</div>
+              <div style="position: absolute; top: 78%; left: 22%; background: #030712; border: 1px solid #f59e0b; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; color: #f59e0b; font-family: monospace;">Point 3</div>
+            </div>
+
+            <div class="lab-controls">
+              <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 8px;">Friction Ridge Classification</h3>
+              <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 20px;">
+                Examine the latent friction ridge impression on the left. Match each marked Galton minutiae point to its forensic definition.
+              </p>
+
+              <div class="input-group">
+                <label class="input-label">Point 1 (Spreading branches):</label>
+                <select class="form-control minutiae-select" data-id="m1">
+                  <option value="">-- Choose Characteristic --</option>
+                  <option value="bifurcation">Bifurcation (Ridge splits in two)</option>
+                  <option value="ridge-ending">Ridge Ending (Abrupt termination)</option>
+                  <option value="island">Island / Dot (Isolated ridge unit)</option>
+                  <option value="core">Core Center (Focal point of loop)</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Point 2 (Abrupt line terminus):</label>
+                <select class="form-control minutiae-select" data-id="m2">
+                  <option value="">-- Choose Characteristic --</option>
+                  <option value="bifurcation">Bifurcation (Ridge splits in two)</option>
+                  <option value="ridge-ending">Ridge Ending (Abrupt termination)</option>
+                  <option value="island">Island / Dot (Isolated ridge unit)</option>
+                  <option value="core">Core Center (Focal point of loop)</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Point 3 (Isolated circular speck):</label>
+                <select class="form-control minutiae-select" data-id="m3">
+                  <option value="">-- Choose Characteristic --</option>
+                  <option value="bifurcation">Bifurcation (Ridge splits in two)</option>
+                  <option value="ridge-ending">Ridge Ending (Abrupt termination)</option>
+                  <option value="island">Island / Dot (Isolated ridge unit)</option>
+                  <option value="core">Core Center (Focal point of loop)</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <label class="input-label">Point 4 (Approximate center curvature):</label>
+                <select class="form-control minutiae-select" data-id="m4">
+                  <option value="">-- Choose Characteristic --</option>
+                  <option value="bifurcation">Bifurcation (Ridge splits in two)</option>
+                  <option value="ridge-ending">Ridge Ending (Abrupt termination)</option>
+                  <option value="island">Island / Dot (Isolated ridge unit)</option>
+                  <option value="core">Core Center (Focal point of loop)</option>
+                </select>
+              </div>
+
+              <div style="display: flex; gap: 12px; margin-top: 20px;">
+                <button class="btn btn-primary btn-sm" id="checkMinutiaeBtn">Verify Minutiae Identification</button>
+                <button class="btn btn-secondary btn-sm" id="resetMinutiaeBtn">Reset</button>
+              </div>
+
+              <div class="tool-output-box" id="minutiaeLabFeedback" style="margin-top: 20px;">
+                Select the correct minutiae type for each labeled point on the ridge impression above.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lab Panel 2: Kastle-Meyer Blood Assay -->
+        <div class="lab-content-panel" id="lab-km">
+          <div class="km-test-station">
+            <div class="swab-test-visual">
+              <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; margin-bottom: 24px;">TEST SPECIMEN: CRIME SCENE SWAB #CS-442</div>
+
+              <div class="cotton-swab">
+                <div class="swab-tip" id="kmSwabTip"></div>
+              </div>
+
+              <div class="reagents-rack">
+                <button class="reagent-bottle" id="kmBtnAlcohol">
+                  <span>Reagent 1</span>
+                  <strong>95% Ethanol</strong>
+                </button>
+                <button class="reagent-bottle" id="kmBtnPhenol" disabled>
+                  <span>Reagent 2</span>
+                  <strong>Phenolphthalin</strong>
+                </button>
+                <button class="reagent-bottle" id="kmBtnH2O2" disabled>
+                  <span>Reagent 3</span>
+                  <strong>3% H₂O₂</strong>
+                </button>
+              </div>
+
+              <button class="btn btn-secondary btn-sm" id="kmBtnReset" style="margin-top: 24px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                Prepare New Swab
+              </button>
+            </div>
+
+            <div class="lab-controls">
+              <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 8px;">Kastle-Meyer Presumptive Assay</h3>
+              <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 16px;">
+                The Kastle-Meyer test exploits the peroxidase-like activity of hemoglobin in blood. Follow the exact sequential protocol in the lab:
+              </p>
+
+              <ol style="padding-left: 20px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 20px;">
+                <li><strong>Ethanol:</strong> Lyses red blood cells and exposes iron-bearing heme groups.</li>
+                <li><strong>Phenolphthalin:</strong> Reduced colorless indicator. (Crucial check: if it turns pink immediately before step 3, chemical oxidants are present = false positive).</li>
+                <li><strong>Hydrogen Peroxide ($H_2O_2$):</strong> Substrate. Heme catalyzes $2H_2O_2 \rightarrow 2H_2O + O_2$, oxidizing reagent to vibrant pink.</li>
+              </ol>
+
+              <div class="tool-output-box" id="kmStatusLog">
+                A sterile cotton swab was rubbed on the suspected red-brown stain. Click "Reagent 1: 95% Ethanol" to begin.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lab Panel 3: DNA Gel Electrophoresis -->
+        <div class="lab-content-panel" id="lab-dna">
+          <div class="dna-gel-container">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <span style="font-family: monospace; font-size: 0.8rem; color: #0df2c9;">AGAROSE GEL TRAY (2.0% w/v)</span>
+                <button class="btn btn-secondary btn-sm" id="uvLightToggle">Turn UV Lamp ON (312 nm)</button>
+              </div>
+
+              <div class="gel-tray">
+                <!-- Lane 1: Ladder -->
+                <div class="gel-lane">
+                  <div class="gel-well"></div>
+                  <div class="dna-band" style="margin-top: 10px; width: 85%;"></div>
+                  <div class="dna-band" style="margin-top: 25px; width: 80%;"></div>
+                  <div class="dna-band" style="margin-top: 40px; width: 75%;"></div>
+                  <div class="dna-band" style="margin-top: 55px; width: 70%;"></div>
+                  <div class="dna-band" style="margin-top: 70px; width: 65%;"></div>
+                  <span class="gel-label">DNA Ladder</span>
+                </div>
+
+                <!-- Lane 2: Crime Scene -->
+                <div class="gel-lane">
+                  <div class="gel-well"></div>
+                  <div class="dna-band" style="margin-top: 25px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 40px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 70px; width: 90%;"></div>
+                  <span class="gel-label">Crime Scene</span>
+                </div>
+
+                <!-- Lane 3: Suspect A -->
+                <div class="gel-lane">
+                  <div class="gel-well"></div>
+                  <div class="dna-band" style="margin-top: 10px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 40px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 60px; width: 90%;"></div>
+                  <span class="gel-label">Suspect A</span>
+                </div>
+
+                <!-- Lane 4: Suspect B -->
+                <div class="gel-lane">
+                  <div class="gel-well"></div>
+                  <div class="dna-band" style="margin-top: 25px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 40px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 70px; width: 90%;"></div>
+                  <span class="gel-label">Suspect B</span>
+                </div>
+
+                <!-- Lane 5: Suspect C -->
+                <div class="gel-lane">
+                  <div class="gel-well"></div>
+                  <div class="dna-band" style="margin-top: 15px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 55px; width: 90%;"></div>
+                  <div class="dna-band" style="margin-top: 70px; width: 90%;"></div>
+                  <span class="gel-label">Suspect C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="lab-controls">
+              <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 8px;">STR Allele Profile Matching</h3>
+              <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 16px;">
+                Gel electrophoresis separates charged DNA fragments by molecular size (smaller fragments migrate further toward the positive anode). Turn on the UV illuminator to reveal fluorescent ethidium bands, then evaluate which suspect matches the evidentiary stain.
+              </p>
+
+              <div style="font-size: 0.82rem; font-family: monospace; color: #0df2c9; margin-bottom: 10px;">Select Suspect Profile to Compare:</div>
+              <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <button class="btn btn-secondary btn-sm suspect-match-btn" data-suspect="A">Test Suspect A</button>
+                <button class="btn btn-secondary btn-sm suspect-match-btn" data-suspect="B">Test Suspect B</button>
+                <button class="btn btn-secondary btn-sm suspect-match-btn" data-suspect="C">Test Suspect C</button>
+              </div>
+
+              <div class="tool-output-box" id="dnaGelFeedback">
+                Turn on the UV Transilluminator to visualize ethidium bromide / SYBR Safe fluorescent DNA bands.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lab Panel 4: Bloodstain Impact Angle Calculator -->
+        <div class="lab-content-panel" id="lab-spatter">
+          <div class="spatter-lab-grid">
+            <div class="spatter-visual-box">
+              <!-- Visual Blood Drop Display -->
+              <div class="blood-drop-shape" id="bloodDropVisual" style="width: 72px; height: 120px;"></div>
+              <div style="position: absolute; bottom: 12px; left: 16px; font-family: monospace; font-size: 0.72rem; color: #94a3b8;">
+                ELLIPTICAL SURFACE ECCENTRICITY
+              </div>
+            </div>
+
+            <div class="lab-controls">
+              <h3 style="font-size: 1.25rem; color: #fff; margin-bottom: 8px;">Impact Angle Determination</h3>
+              <p style="font-size: 0.88rem; color: #94a3b8; margin-bottom: 16px;">
+                When a spherical airborne blood droplet strikes a non-porous flat surface at an angle, it creates an elongated elliptical stain. Adjust droplet width ($w$) and length ($l$) to calculate impact angle:
+              </p>
+
+              <div class="input-group">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <label class="input-label" style="margin: 0;">Droplet Width (w):</label>
+                  <span id="spatterWidthVal" style="font-family: monospace; color: #0df2c9; font-size: 0.85rem;">6.0 mm</span>
+                </div>
+                <input type="range" class="form-control" id="spatterWidthInput" min="2" max="15" step="0.5" value="6.0">
+              </div>
+
+              <div class="input-group">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                  <label class="input-label" style="margin: 0;">Droplet Length (l):</label>
+                  <span id="spatterLengthVal" style="font-family: monospace; color: #0df2c9; font-size: 0.85rem;">12.0 mm</span>
+                </div>
+                <input type="range" class="form-control" id="spatterLengthInput" min="6" max="25" step="0.5" value="12.0">
+              </div>
+
+              <div class="tool-output-box">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                  <span>CALCULATED IMPACT ANGLE:</span>
+                  <strong style="font-size: 1.4rem; color: #0df2c9;" id="spatterAngleOutput">30.0°</strong>
+                </div>
+                <div style="font-size: 0.78rem; color: #94a3b8;" id="spatterVelocityClass">
+                  Medium Impact Spatter (Blunt Force / Moderate Velocity)
+                </div>
+                <div style="font-size: 0.72rem; color: #64748b; margin-top: 6px;">
+                  Formula: $\sin(\theta) = \text{Width} / \text{Length} \implies \theta = \arcsin(w/l)$
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 5: STUDY HUB & FLASHCARDS
+       ======================================================================== -->
+  <section class="section" id="study">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Academic Resources</span>
+        <h2 class="section-title">Undergraduate Study Hub</h2>
+        <p class="section-subtitle">
+          Curated study notes, procedural summaries, and flashcards written specifically for first-year university forensic science modules. Filter notes by subject or test your recall with the flashcard deck.
+        </p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="study-hub-filter">
+        <button class="filter-btn active" data-filter="all">All Notes</button>
+        <button class="filter-btn" data-filter="biology">Biology & DNA</button>
+        <button class="filter-btn" data-filter="chemistry">Chemistry & Tox</button>
+        <button class="filter-btn" data-filter="physics">Physics & Ballistics</button>
+        <button class="filter-btn" data-filter="fingerprints">Fingerprints</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+        <button class="filter-btn" data-filter="procedures">Procedures</button>
+      </div>
+
+      <!-- Dynamic Study Notes Grid -->
+      <div class="study-notes-grid" id="studyNotesGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+
+      <!-- Flashcards Widget -->
+      <div class="flashcards-container">
+        <span class="badge-tag" style="margin-bottom: 8px;">Active Recall Engine</span>
+        <h3 style="font-size: 1.6rem; color: #fff; margin-bottom: 8px;">Key Forensic Concepts Flashcards</h3>
+        <p style="color: #94a3b8; font-size: 0.95rem; max-width: 600px; margin: 0 auto 16px auto;">
+          Click the card to flip between the forensic term and its definition. Use the controls to cycle through the foundational 1st-year vocabulary deck.
+        </p>
+
+        <div class="flashcard-wrapper">
+          <div class="flashcard" id="flashcardElement">
+            <div class="flashcard-front">
+              <span style="font-family: monospace; font-size: 0.72rem; color: #64748b; margin-bottom: 8px;">FORENSIC VOCABULARY • CLICK TO FLIP</span>
+              <div class="flashcard-term" id="flashcardFrontTerm">Locard's Exchange Principle</div>
+              <span style="color: #94a3b8; font-size: 0.8rem; margin-top: 12px;">Flip for Definition ↻</span>
+            </div>
+            <div class="flashcard-back">
+              <span style="font-family: monospace; font-size: 0.72rem; color: #0df2c9; margin-bottom: 8px;">DEFINITION</span>
+              <div class="flashcard-def" id="flashcardBackDef">With contact between two items, there will always be an exchange of microscopic or physical material.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 16px;">
+          <button class="btn btn-secondary btn-sm" id="prevFlashcardBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            Previous Term
+          </button>
+          <span style="font-family: monospace; font-size: 0.85rem; color: #0df2c9;" id="flashcardCounter">Card 1 of 8</span>
+          <button class="btn btn-secondary btn-sm" id="nextFlashcardBtn">
+            Next Term
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: QUIZ
+       ======================================================================== -->
+  <section class="section section-alt" id="quiz">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Knowledge Check</span>
+        <h2 class="section-title">First-Year Practice Quiz</h2>
+        <p class="section-subtitle">
+          Assess your comprehension of foundational forensic science concepts. Receive immediate feedback with detailed scientific explanations for every question.
+        </p>
+      </div>
+
+      <div class="quiz-wrapper">
+        <div class="quiz-header-bar">
+          <span id="quizQuestionNumber" style="color: #0df2c9;">Question 1 of 8</span>
+          <span id="quizCategoryPill" style="color: #f59e0b; background: rgba(245,158,11,0.1); padding: 2px 8px; border-radius: 4px;">General Forensics</span>
+          <span id="quizScoreCounter" style="color: #94a3b8;">Score: 0/8</span>
+        </div>
+
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-bar" id="quizProgressBar"></div>
+        </div>
+
+        <div class="quiz-question-text" id="quizQuestionText">Loading Question...</div>
+
+        <div class="quiz-options-list" id="quizOptionsList">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <div class="quiz-explanation-box" id="quizExplanationBox"></div>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 20px;">
+          <button class="btn btn-secondary btn-sm" id="quizRestartBtn">Restart Quiz</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 7: STUDENT ACADEMIC PROJECTS
+       ======================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Peer Research Showcase</span>
+        <h2 class="section-title">Student Academic Projects</h2>
+        <p class="section-subtitle">
+          Discover how undergraduate students apply forensic science principles in original lab investigations, capstone papers, and empirical experiments.
+        </p>
+      </div>
+
+      <div class="study-hub-filter projects-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="biology">Biology & Pathology</button>
+        <button class="filter-btn" data-filter="chemistry">Forensic Chemistry</button>
+        <button class="filter-btn" data-filter="physics">Impact Ballistics</button>
+        <button class="filter-btn" data-filter="digital">Cyber Forensics</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 8: CAREER OPPORTUNITIES
+       ======================================================================== -->
+  <section class="section section-alt" id="career">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Professional Pathways</span>
+        <h2 class="section-title">Careers in Forensic Science</h2>
+        <p class="section-subtitle">
+          Forensic science degrees unlock specialized careers across public crime laboratories, medical examiner offices, private analytical firms, and cyber response units.
+        </p>
+      </div>
+
+      <div class="career-grid">
+        <!-- CSI -->
+        <div class="career-card">
+          <div class="career-pathway-tag">FIELD INVESTIGATION</div>
+          <h3 class="card-title">Crime Scene Investigator (CSI)</h3>
+          <p class="card-desc">
+            Deploys to active crime scenes to document physical geometry, perform forensic photography, develop latent prints in situ, and preserve physical evidence following strict chain of custody.
+          </p>
+          <ul class="career-duties-list">
+            <li>Scene perimeter management & evidence photography</li>
+            <li>Latent print powder & chemical visualization</li>
+            <li>Biological fluid collection & preservation</li>
+            <li>Expert witness testimony in criminal courts</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Forensic Science, Chemistry, or Criminalistics with field certification.
+          </div>
+        </div>
+
+        <!-- Forensic Toxicologist -->
+        <div class="career-card">
+          <div class="career-pathway-tag">LABORATORY ANALYTICAL</div>
+          <h3 class="card-title">Forensic Toxicologist</h3>
+          <p class="card-desc">
+            Analyzes biological matrices (whole blood, vitreous humor, liver tissue, hair) to isolate, identify, and quantify poisons, alcohol, narcotics, and therapeutic drugs.
+          </p>
+          <ul class="career-duties-list">
+            <li>Operating GC-MS, LC-MS/MS, and HPLC spectrometers</li>
+            <li>Post-mortem toxicology for medical examiners</li>
+            <li>Driving Under the Influence (DUI) blood alcohol quantification</li>
+            <li>Quality assurance and strict validation protocols</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Chemistry, Biochemistry, or Pharmacology with instrumental lab training.
+          </div>
+        </div>
+
+        <!-- Latent Print Examiner -->
+        <div class="career-card">
+          <div class="career-pathway-tag">BIOMETRICS & IMPRESSION</div>
+          <h3 class="card-title">Latent Print Examiner</h3>
+          <p class="card-desc">
+            Specializes in friction ridge analysis on physical evidence using optical, physical, and chemical processing techniques, followed by ACE-V comparison with AFIS/NGI databases.
+          </p>
+          <ul class="career-duties-list">
+            <li>Chemical enhancement with Cyanoacrylate and Ninhydrin</li>
+            <li>Level 1, 2, and 3 minutiae feature mapping</li>
+            <li>Automated Fingerprint Identification System searching</li>
+            <li>Peer-reviewed verification of individualizations</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Forensic Science or Biology with IAI Latent Print Certification pathway.
+          </div>
+        </div>
+
+        <!-- Digital Forensics Analyst -->
+        <div class="career-card">
+          <div class="career-pathway-tag">CYBERSECURITY & DIGITAL</div>
+          <h3 class="card-title">Digital Forensics Analyst</h3>
+          <p class="card-desc">
+            Recovers and parses digital evidence from confiscated smartphones, computers, vehicle telematics, and cloud servers to investigate cyberattacks, fraud, and homicide cases.
+          </p>
+          <ul class="career-duties-list">
+            <li>Bit-stream forensic cloning & hash verification</li>
+            <li>Volatile RAM memory extraction & artifact analysis</li>
+            <li>Deleted file carving & SQLite database reconstruction</li>
+            <li>Malware reverse-engineering and timeline analysis</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Digital Forensics, Computer Science, or Cybersecurity with EnCE/GCFE training.
+          </div>
+        </div>
+
+        <!-- Forensic DNA Analyst -->
+        <div class="career-card">
+          <div class="career-pathway-tag">MOLECULAR GENETICS</div>
+          <h3 class="card-title">Forensic DNA Analyst</h3>
+          <p class="card-desc">
+            Extracts, quantifies, amplifies, and profiles DNA from challenging trace samples (touch DNA, blood, bone) using multiplex PCR and capillary electrophoresis.
+          </p>
+          <ul class="career-duties-list">
+            <li>Differential extraction for sexual assault kits</li>
+            <li>STR multiplex typing across 20+ standard loci</li>
+            <li>Statistical calculation of random match probabilities</li>
+            <li>CODIS national database administration</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Molecular Biology, Genetics, or Biochemistry with courses in Population Genetics.
+          </div>
+        </div>
+
+        <!-- Forensic Firearms & Toolmark Examiner -->
+        <div class="career-card">
+          <div class="career-pathway-tag">BALLISTICS & TRACE</div>
+          <h3 class="card-title">Firearms & Toolmark Examiner</h3>
+          <p class="card-desc">
+            Examines recovered firearms, fired bullets, cartridge cases, and toolmarks to determine mechanical function, muzzle-to-target distance, and striation matches.
+          </p>
+          <ul class="career-duties-list">
+            <li>Comparison microscopy of striation and breech marks</li>
+            <li>Chemical gunpowder residue mapping (Modified Griess)</li>
+            <li>Trajectory reconstruction and ejection pattern testing</li>
+            <li>NIBIN ballistics database correlation</li>
+          </ul>
+          <div style="font-family: monospace; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid #1e293b; padding-top: 12px; margin-top: auto;">
+            <strong>Prerequisite:</strong> B.Sc. in Forensic Science, Physics, or Mechanical Engineering with AFTE apprenticeship.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 9: TOOLKIT
+       ======================================================================== -->
+  <section class="section" id="toolkit">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Investigative Utilities</span>
+        <h2 class="section-title">Forensic Student Toolkit</h2>
+        <p class="section-subtitle">
+          Interactive computational tools, packaging matrices, and procedural chain-of-custody builders designed to assist students during practical coursework and lab report calculations.
+        </p>
+      </div>
+
+      <div class="toolkit-tabs-grid">
+        <!-- Tool 1: Glaister Equation PMI Estimator -->
+        <div class="tool-widget-card">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div style="width: 32px; height: 32px; background: rgba(13,242,201,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #0df2c9;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 style="font-size: 1.15rem; color: #fff;">Algor Mortis PMI Estimator</h3>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 16px;">
+            Estimates Post-Mortem Interval (PMI) based on the Glaister Equation linear cooling rate model:
+          </p>
+
+          <div class="input-group">
+            <label class="input-label">Core Body Temperature (°F):</label>
+            <input type="number" class="form-control" id="rectalTempInput" value="89.4" step="0.1">
+          </div>
+
+          <div class="input-group">
+            <label class="input-label">Ambient Room Temperature (°F):</label>
+            <input type="number" class="form-control" id="ambientTempInput" value="70.0" step="0.5">
+          </div>
+
+          <button class="btn btn-primary btn-sm" id="calcPmiBtn" style="width: 100%;">
+            Calculate Estimated PMI
+          </button>
+
+          <div class="tool-output-box" id="pmiOutput">
+            Enter temperatures above and click Calculate to estimate hours elapsed since death.
+          </div>
+        </div>
+
+        <!-- Tool 2: Evidence Packaging Protocol Guide -->
+        <div class="tool-widget-card">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div style="width: 32px; height: 32px; background: rgba(13,242,201,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #0df2c9;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <h3 style="font-size: 1.15rem; color: #fff;">Evidence Packaging Matrix</h3>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 16px;">
+            Prevent evidence contamination or spoliation by reviewing the certified containment protocol:
+          </p>
+
+          <div class="input-group">
+            <label class="input-label">Select Evidence Material:</label>
+            <select class="form-control" id="evidenceTypeSelect">
+              <option value="blood_wet">Biological Wet Stain (Blood / Body Fluid)</option>
+              <option value="firearms">Firearms & Expended Cartridges</option>
+              <option value="digital_phone">Smartphones / Flash Drives (Digital)</option>
+              <option value="arson_debris">Fire Accelerant & Charred Wood (Arson)</option>
+            </select>
+          </div>
+
+          <div class="tool-output-box" id="packagingOutput">
+            <div style="color: #0df2c9; font-weight: 600; margin-bottom: 4px;">Recommended Container: Porous Kraft Paper Bag</div>
+            <div style="color: #cbd5e1; font-size: 0.85rem;"><strong>Protocol:</strong> NEVER seal in plastic! Must be completely air-dried at room temperature in an evidence locker before final packaging to prevent enzymatic DNA degradation.</div>
+          </div>
+        </div>
+
+        <!-- Tool 3: Chain of Custody Record Builder -->
+        <div class="tool-widget-card">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <div style="width: 32px; height: 32px; background: rgba(13,242,201,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #0df2c9;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 style="font-size: 1.15rem; color: #fff;">Chain of Custody Builder</h3>
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 12px;">
+            Generate standard formatted transfer custody documentation for mock scene practicals:
+          </p>
+
+          <div class="input-group" style="margin-bottom: 10px;">
+            <input type="text" class="form-control" id="cocItemNum" placeholder="Item ID (e.g. ITEM-2026-001)">
+          </div>
+          <div class="input-group" style="margin-bottom: 10px;">
+            <input type="text" class="form-control" id="cocItemDesc" placeholder="Item Description (e.g. Spent 9mm brass casing)">
+          </div>
+          <div class="input-group" style="margin-bottom: 10px;">
+            <input type="text" class="form-control" id="cocOfficer" placeholder="Investigator Name / Badge">
+          </div>
+
+          <button class="btn btn-primary btn-sm" id="genCoCBtn" style="width: 100%; margin-bottom: 10px;">
+            Generate Custody Ledger
+          </button>
+
+          <textarea class="form-control" id="cocOutput" style="height: 100px; font-family: monospace; font-size: 0.72rem; color: #0df2c9;" readonly placeholder="Formatted chain of custody entry will generate here..."></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 10: GLOSSARY
+       ======================================================================== -->
+  <section class="section section-alt" id="glossary">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Academic Lexicon</span>
+        <h2 class="section-title">Forensic Science Glossary</h2>
+        <p class="section-subtitle">
+          Over 35 essential scientific definitions, forensic acronyms, and legal standards frequently tested in university examinations. Use the real-time search filter or alphabet selector.
+        </p>
+      </div>
+
+      <!-- Live Search Bar -->
+      <div class="glossary-search-bar">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" class="glossary-search-input" id="glossarySearchInput" placeholder="Search terminology (e.g. Locard, Minutiae, Luminol, STR, Becke line)...">
+      </div>
+
+      <!-- Alphabet Filter Buttons -->
+      <div class="alphabet-bar">
+        <button class="alpha-btn active" data-letter="ALL">ALL</button>
+        <button class="alpha-btn" data-letter="A">A</button>
+        <button class="alpha-btn" data-letter="B">B</button>
+        <button class="alpha-btn" data-letter="C">C</button>
+        <button class="alpha-btn" data-letter="D">D</button>
+        <button class="alpha-btn" data-letter="E">E</button>
+        <button class="alpha-btn" data-letter="F">F</button>
+        <button class="alpha-btn" data-letter="G">G</button>
+        <button class="alpha-btn" data-letter="H">H</button>
+        <button class="alpha-btn" data-letter="K">K</button>
+        <button class="alpha-btn" data-letter="L">L</button>
+        <button class="alpha-btn" data-letter="M">M</button>
+        <button class="alpha-btn" data-letter="N">N</button>
+        <button class="alpha-btn" data-letter="P">P</button>
+        <button class="alpha-btn" data-letter="R">R</button>
+        <button class="alpha-btn" data-letter="S">S</button>
+        <button class="alpha-btn" data-letter="T">T</button>
+        <button class="alpha-btn" data-letter="W">W</button>
+      </div>
+
+      <!-- Glossary Dynamic Grid -->
+      <div class="glossary-grid" id="glossaryGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 11: ABOUT
+       ======================================================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="badge-tag">Educational Mission</span>
+          <h2 class="section-title">About Forensic Hub</h2>
+          <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8; margin-bottom: 20px;">
+            Forensic Hub is an open, modern educational web platform dedicated to supporting first-year university students embarking on their degree studies in Forensic Science, Criminalistics, and Analytical Criminology.
+          </p>
+          <p style="color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px;">
+            First-year students frequently encounter a steep learning curve transitioning into university-level forensic coursework: integrating analytical chemistry with molecular biology, vector physics, and strict criminal jurisprudence. Forensic Hub bridges textbook theory with active visualization, interactive virtual laboratory simulations, and peer academic exchange.
+          </p>
+
+          <ul class="pedagogy-list">
+            <li class="pedagogy-item">
+              <div class="pedagogy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div>
+                <strong style="color: #fff; font-size: 1rem; display: block; margin-bottom: 2px;">Peer-Driven Open Pedagogy</strong>
+                <span style="color: #94a3b8; font-size: 0.88rem;">Built to democratize access to foundational forensic laboratory protocols, study flashcards, and analytical calculators.</span>
+              </div>
+            </li>
+            <li class="pedagogy-item">
+              <div class="pedagogy-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <div>
+                <strong style="color: #fff; font-size: 1rem; display: block; margin-bottom: 2px;">Simulated Practical Exercises</strong>
+                <span style="color: #94a3b8; font-size: 0.88rem;">Safe, interactive digital environments to understand colorimetric reactions (Kastle-Meyer), gel migrations, and minutiae extraction.</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="disclaimer-banner">
+            <strong style="color: #f59e0b; display: block; margin-bottom: 4px;">Independent Educational Resource Disclaimer:</strong>
+            Forensic Hub is an independent, non-commercial open educational project created solely for peer learning, undergraduate study revision, and science communication. Forensic Hub is not an official university platform, is not affiliated with or endorsed by any specific university, law enforcement agency, or government forensic laboratory, and does not issue formal academic credentials.
+          </div>
+        </div>
+
+        <div>
+          <div class="forensic-card" style="padding: 36px; background: rgba(10, 19, 41, 0.85); border-color: rgba(13, 242, 201, 0.3);">
+            <div style="font-family: monospace; font-size: 0.75rem; color: #0df2c9; margin-bottom: 10px;">CORE CURRICULUM VALUES</div>
+            <h3 style="font-size: 1.4rem; color: #fff; margin-bottom: 16px;">The Forensic Ethos</h3>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="font-size: 1rem; color: #0df2c9; margin-bottom: 4px;">1. Objectivity & Scientific Integrity</h4>
+              <p style="font-size: 0.88rem; color: #94a3b8;">Forensic scientists are advocates for the physical evidence itself, never for the prosecution or defense.</p>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="font-size: 1rem; color: #0df2c9; margin-bottom: 4px;">2. Reproducibility & Validation</h4>
+              <p style="font-size: 0.88rem; color: #94a3b8;">Every analytical methodology must satisfy strict Daubert or Frye admissibility criteria through rigorous control testing.</p>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <h4 style="font-size: 1rem; color: #0df2c9; margin-bottom: 4px;">3. Unbroken Chain of Custody</h4>
+              <p style="font-size: 0.88rem; color: #94a3b8;">Physical integrity is only as sound as the documentation proving where evidence has been at every second.</p>
+            </div>
+
+            <div style="margin-bottom: 10px;">
+              <h4 style="font-size: 1rem; color: #0df2c9; margin-bottom: 4px;">4. Continuous Learning</h4>
+              <p style="font-size: 0.88rem; color: #94a3b8;">From next-generation DNA sequencing to AI-assisted video forensics, scientific vigilance never ceases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 12: CONTACT
+       ======================================================================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge-tag">Get in Touch</span>
+        <h2 class="section-title">Connect with Forensic Hub</h2>
+        <p class="section-subtitle">
+          Have questions regarding study materials, virtual lab activities, or student research collaborations? Send us an inquiry message.
+        </p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="input-group">
+              <label class="input-label" for="contactName">Your Full Name *</label>
+              <input type="text" class="form-control" id="contactName" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="input-group">
+              <label class="input-label" for="contactEmail">University / Academic Email *</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="e.g. student@university.edu" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label class="input-label" for="contactRole">Your Academic Standing</label>
+              <select class="form-control" id="contactRole">
+                <option value="first_year">First-Year Forensic Science Student</option>
+                <option value="senior_student">Senior Undergraduate Student</option>
+                <option value="postgrad">Postgraduate / Research Scholar</option>
+                <option value="educator">Academic Faculty / Educator</option>
+                <option value="other">General Science Enthusiast</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label class="input-label" for="contactSubject">Inquiry Topic</label>
+              <select class="form-control" id="contactSubject">
+                <option value="study_materials">Study Hub Notes & Curricula</option>
+                <option value="virtual_lab">Virtual Lab Feedback / Bug Report</option>
+                <option value="project_submission">Student Project Showcase Submission</option>
+                <option value="general">General Educational Question</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label class="input-label" for="contactMessage">Your Message *</label>
+            <textarea class="form-control" id="contactMessage" placeholder="Type your message, study query or feedback here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            <span>Send Inquiry Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+
+          <div id="contactFeedback" style="margin-top: 16px; font-size: 0.9rem; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#home" class="brand-logo" style="margin-bottom: 16px;">
+            <svg class="brand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 3.31 1.61 6.24 4.09 8.04.4.29.96.12 1.13-.34.13-.35.02-.75-.26-1-2.07-1.5-3.46-3.95-3.46-6.7 0-4.69 3.81-8.5 8.5-8.5s8.5 3.81 8.5 8.5c0 2.75-1.39 5.2-3.46 6.7-.28.25-.39.65-.26 1 .17.46.73.63 1.13.34C20.39 18.24 22 15.31 22 12c0-5.52-4.48-10-10-10z"/>
+            </svg>
+            <div class="brand-text">
+              Forensic<span>Hub</span>
+              <span class="brand-sub">Academic Portal</span>
+            </div>
+          </a>
+          <p style="color: #64748b; font-size: 0.88rem; line-height: 1.6; max-width: 320px;">
+            An open educational portal empowering first-year university forensic science students through interactive experimentation, procedural study guides, and empirical analysis.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Exploration</h4>
+          <ul class="footer-links">
+            <li><a href="#subjects">Foundational Subjects</a></li>
+            <li><a href="#cases">Case Studies</a></li>
+            <li><a href="#lab">Virtual Simulators</a></li>
+            <li><a href="#study">Undergraduate Study Hub</a></li>
+            <li><a href="#quiz">Practice MCQ Quiz</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Tools</h4>
+          <ul class="footer-links">
+            <li><a href="#toolkit">Glaister PMI Estimator</a></li>
+            <li><a href="#toolkit">Evidence Packaging Guide</a></li>
+            <li><a href="#toolkit">Chain of Custody Builder</a></li>
+            <li><a href="#glossary">Forensic Glossary</a></li>
+            <li><a href="#projects">Peer Student Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>About & Ethics</h4>
+          <ul class="footer-links">
+            <li><a href="#about">Mission & Pedagogy</a></li>
+            <li><a href="#about">Independent Disclaimer</a></li>
+            <li><a href="#career">Forensic Career Pathways</a></li>
+            <li><a href="#contact">Contact Student Team</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Forensic Hub. Independent Educational Platform. All rights reserved.
+        </div>
+        <div>
+          Theme: Deep Navy, Black & Forensic Teal • Built for First-Year Forensic Science Studies
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
